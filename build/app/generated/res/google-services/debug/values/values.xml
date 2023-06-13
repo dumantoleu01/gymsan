@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1002567445268-35i6svhba32gt2o3qvnbk0ntsevgemi3.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1002567445268</string>
+    <string name="google_api_key" translatable="false">AIzaSyB1YCaD8wOuizz95vh_cLaIYqdy5pyMbBE</string>
+    <string name="google_app_id" translatable="false">1:1002567445268:android:b710cc83f185ae66b0f001</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB1YCaD8wOuizz95vh_cLaIYqdy5pyMbBE</string>
+    <string name="google_storage_bucket" translatable="false">gymsanapp.appspot.com</string>
+    <string name="project_id" translatable="false">gymsanapp</string>
+</resources>

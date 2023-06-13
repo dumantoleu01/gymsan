@@ -1,14 +1,18 @@
+import "package:firebase_auth/firebase_auth.dart";
 import "package:flutter/material.dart";
 
 import "../../widgets/MeCard.dart";
 import "../calendar.dart";
 
 class Profile extends StatelessWidget {
-  const Profile({
+  final user = FirebaseAuth.instance.currentUser;
+
+  Profile({
     super.key,
   });
   @override
   Widget build(BuildContext context) {
+    String userEmail = user!.email ?? "sanzhar@gmail.com";
     return Container(
         padding: const EdgeInsets.all(16),
         child: ListView(
@@ -41,20 +45,14 @@ class Profile extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: const [
+                    children: [
                       Text(
-                        "Sanzhar",
-                        style: TextStyle(
+                        userEmail,
+                        style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
                         ),
                       ),
-                      Text(
-                        "sanzhar.sseiful@gmail.com",
-                        style: TextStyle(
-                          fontSize: 16,
-                        ),
-                      )
                     ],
                   ),
                 )

@@ -13,7 +13,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<Home> {
-  List pages = [Search(), HomeScreen(), Favs(), const Profile()];
+  List pages = [Search(), HomeScreen(), Favs(), Profile()];
   int currentPage = 1;
   @override
   Widget build(BuildContext context) {

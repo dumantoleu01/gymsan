@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.white,
         extendBody: true,
         body: Padding(
-          padding: EdgeInsets.only(top: appPadding * 2),
+          padding: EdgeInsets.only(top: appPadding),
           child: Column(
             children: [
               CustomAppBar(),
